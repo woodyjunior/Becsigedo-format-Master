@@ -1,0 +1,30 @@
+header.header
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    font-family: "Ubuntu";
+    padding-top: 1rem;
+    border-top: 0.5rem solid $main-color;
+    background-color: transparent;
+    color: #eaf6ff;
+
+    .header-container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo
+    {
+        img
+        {
+            max-width: 200px;
+        }
+    }
+
+    @import"navigation";
+}
