@@ -33,7 +33,20 @@
                 <nav class="navigation">
                     <ul class="nav-links">
                         <li class="nav-item"><a href="#" class="nav-link active">Accueil<i class="fas fa-home"></i></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a></li>
+                        
+                        <!-- Submenu link -->
+                        <li class="nav-item submenu">
+                            <a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a>
+
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="#" class="nav-link active">Blog<i class="fas fa-comment"></i></a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"> single Blog<i class="fas fa-newspaper"></i></a></li>
+                            </ul>
+                            <!-- End dropdown menu -->
+                        </li>
+                        <!-- End submenu link -->
+
                         <li class="nav-item"><a href="#" class="nav-link">Contact <i class="fas fa-envelope"></i></a></li>
                     </ul>
                 </nav>
@@ -50,11 +63,134 @@
           <div class="banner-wrapper">
               <h1 class="b-title">Bureau d’experts en création de site d’internet et de gestion de données</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tenetur, perferendis iusto aliquam qui, vitae nihil temporibus reiciendis sunt porro incidunt hic, in provident iure cum fugiat doloribus fugit voluptatum!</p>
-                <a href="#" class="btn">Ventes de services</a>
+                <a href="#" class="btn btn-big btn-outline">Ventes de services</a>
           </div>
       </div>
-  </section><!-- End Banner section-->
+  </section>
+  <!-- End Banner section-->
 
+  <!-- Card section -->
+  <section class="card py-70" id="card">
+    <div class="container">
+        <div class="card-wrapper">
+            <article>
+                <header>
+                    <h4>Formation disponible apprendre a coder.</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam praesentium corrupti dolores ratione. Temporibus facere 
+                    molestiae autem iure minima odio ratione ut asperiores perspiciatis vel, sunt quas nihil aliquid.</p>
+                    <footer><a href="" class="btn btn-mini btn-outline ">Voir plus<i class="fas fa-angle-double-right"></i></a></footer>
+            </article>
+            <article>
+                <header>
+                    <h4>Payment en ligne pour les magasins.</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam praesentium corrupti dolores ratione. Temporibus facere 
+                    molestiae autem iure minima odio ratione ut asperiores perspiciatis vel, sunt quas nihil aliquid.</p>
+                    <footer><a href="" class="btn btn-mini btn-outline ">Voir plus<i class="fas fa-angle-double-right"></i></a></footer>
+            </article>
+            <article>
+                <header>
+                    <h4>Cree votre site web en ligne en un click.</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam praesentium corrupti dolores ratione. Temporibus facere 
+                    molestiae autem iure minima odio ratione ut asperiores perspiciatis vel, sunt quas nihil aliquid.</p>
+                    <footer><a href="" class="btn btn-mini btn-outline">Voir plus<i class="fas fa-angle-double-right"></i></a></footer>
+            </article>
+        </div>
+    </div>
+  </section>
+  <!-- End Card section -->
+
+  <!-- Mentors section -->
+  <section class="mentors py-70 bg-bw" id="mentors">
+    <div class="container">
+        <div class="mentors-wrapper">
+
+            <!-- Mentors header Title + description -->
+            <header class="section-header">
+                <h1 class="main-title">Personnes disponible a votre disposition</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio tenetur, ullam voluptatum nihil eligendi quas quisquam? Ipsam excepturi voluptatum vero tempore, voluptate distinctio. Expedita ipsa blanditiis temporibus nemo laudantium!</p>
+            </header>
+            <!-- End mentors header Title + description  -->
+
+            <!-- Mentors container -->
+            <div class="mentors-container row">
+                <div class="mentor-box px-15">
+                   <div class="box">
+                        <div class="mentor-imag"><img src="assets/Images/Person/Dev1.JPG" alt="Mentor" class="img img-rounded"></div>
+                        <h4 class="l4-title">Woody Junior</h4>
+                        <p>Developpeur front-end</p>
+                    </div>
+                </div>
+
+                
+                <div class="mentor-box px-15">
+                    <div class="box">
+                        <div class="mentor-imag"><img src="assets/Images/Person/Dev1.JPG" alt="Mentor" class="img img-rounded"></div>
+                        <h4 class="l4-title">Woody Junior</h4>
+                        <p>Developpeur front-end</p>
+                    </div>
+                </div>
+
+                <div class="mentor-box px-15 ">
+                    <div class="box">
+                        <div class="mentor-imag"><img src="assets/Images/Person/Dev3.JPG" alt="Mentor" class="img img-rounded"></div>
+                        <h4 class="l4-title">Woody Junior</h4>
+                        <p>Developpeur front-end</p>
+                    </div>
+                </div>
+
+                <div class="mentor-box px-15">
+                    <div class="box">
+                        <div class="mentor-imag"><img src="assets/Images/Person/Dev4.JPG" alt="Mentor" class="img img-rounded"></div>
+                        <h4 class="l4-title">Woody Junior</h4>
+                        <p>Developpeur front-end</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Mentors container -->
+        </div>
+    </div>
+  </section>
+ <!-- End mentors-->
+
+  <!-- Footer Section -->
+  <footer class="footer py-70 bg-bw" id="footer">
+     <div class="container">
+        <div class="footer-blocks row">
+
+            <!-- Footer links -->
+            <div class="footer-block f-links px-15">
+                <ul>
+                    <li><a href="#">A propos de nous</a></li>
+                    <li><a href="#">Nous ecrire</a></li>
+                    <li><a href="#">Politique de confidentialite</a></li>
+                </ul>
+            </div>
+            <!-- End footer links-->
+
+          <!-- Social links-->
+          <div class="footer-block s-links px-15">
+            <ul>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <!-- End Social links-->
+
+          
+          <div class="copyright" id="copyright">
+              &copy; | Becsigedo <script>document.write(new Date().getFullYear());</script> all rights reserved
+          </div>
+
+        </div>
+     </div>
+  </footer>
 </body>
+ <!-- End footer section-->
 
 </html>
