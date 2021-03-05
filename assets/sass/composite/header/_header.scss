@@ -12,22 +12,40 @@ header.header
     color: $break-white;
     
 
-    .header-container
-    {
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         
     }
 
-    .logo
-    {
-        img
-        {
-            max-width: 200px;
+    @media (max-width: $md) {
+        &.show {
+            .navigation {
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+    }
+
+   
+
+    .logo {
+        @media(max-width: $md) {
+            position: absolute;
+            left: 50px;
+            top: 15px;
+        }
+        
+        img{
+            max-width: 280px;
             
         }
     }
+
+    
+
+    @import "hamburger";
 
     @import"navigation";
 }

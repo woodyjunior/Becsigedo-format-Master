@@ -1,0 +1,18 @@
+#articles {
+    .articles-container {
+        article {
+            width: 50%;
+            flex: 0 0 50%;
+
+            header h4 {
+                font-weight: 400;
+                color: $main-color;
+            }
+
+            p {
+                color: $sec-color;
+                padding: 1rem 0;
+            }
+        }
+    }
+}

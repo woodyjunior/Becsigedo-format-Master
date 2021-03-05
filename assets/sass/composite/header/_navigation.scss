@@ -1,85 +1,19 @@
-.navigation
-    {
-        .nav-links
-        {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            min-width: 50%;
-            
-
-            .nav-item
-            {
-                margin-left: 1rem;
-                list-style-type: none;
-                
-
-                .nav-link
-                {
-                    padding: .35rem  .75rem;
-                    font-size: 19px;
-                    font-weight: 400;
-                    color: inherit;
-                    line-height: 2;
-                    cursor: pointer;
-                    text-decoration: none;
-                    border-bottom: 1px solid transparent;
-                    transition: all .3s ease;
-
-                    &:hover, &:active, &.active, &.hover
-                    {
-                        color: $main-color;
-                        border-block-color: $main-color;
-
-                    }
-                }
-            }
-
-            .nav-item.submenu
-            {
-                position: relative;
-
-                &:hover
-                {
-                    .dropdown-menu
-                    {
-                        opacity: 1;
-                        visibility: visible;
-                        top: 100%;
-                    }
-                }
-
-                .dropdown-menu
-                {
-                    position: absolute;
-                    display: block;
-                    left: 0;
-                    top: 150%;
-                    min-width: 200px;
-                    padding: 0;
-                    text-align: left;
-                    background-color: $main-color;
-                    color: $break-white;
-                    border: none;
-                    border-radius: 0;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: all .3s ease-in;
-                }
-
-                a.nav-link
-                {
-                    display: block;
-                    width: 100%;
-                    transition: color .25s ease-in;
-
-                    &:hover, &:active, &.active, &.hover
-                    {
-                        color: $sec-color;
-                        border-bottom-color: transparent;
-                    }
-                }
-            }
-        }
+nav.navigation {
+    @media (max-width: $md) {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        border-color: transparentize($black, .25);
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: transform .5s ease, visibility .5s ease;
     }
+  
+    @import "nav-links";
+        
+        
+}
     

@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+
+}
+
+h1, .h1 {
+    font-size: 2.5em;
+}
+
+h2, .h2 {
+    font-size: 2.3em;
+}
+
+h3, .h3 {
+    font-size: 2em;
+}
+
+h4, .h4 {
+    font-size: 1.6em;
+}
+
+h5, .h5 {
+    font-size: 1.4em;
+}
+
+h6, .h6 {
+    font-size: 1.2em;
+}
+
+.main-title {
+    margin-bottom: 2rem;
+    
+    font-size: 3em;
+    font-family: $ubuntu;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    color: $main-color;
+}
+
+.l4-title {
+    font-family: $piazzo;
+    color: $main-color;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.b-title {
+    font-family: $piazzo;
+    font-size: 3em;
+    padding-top: 100px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00dafd;
+    line-height: 2;
+    text-transform: uppercase;
+
+    @media (max-width: $md) {
+        font-size: 2em;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}
