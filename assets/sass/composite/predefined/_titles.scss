@@ -28,16 +28,38 @@ h6, .h6 {
     font-size: 1.2em;
 }
 
-.main-title {
-    margin-bottom: 2rem;
-    
+.main-title, .b-title {
     font-size: 3em;
-    font-family: $ubuntu;
+    padding-top: 100px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 2rem;
+
+
+    @media(max-width: $md) {
+        font-size: 2em;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}
+
+.main-title {
+    font-family: $ubuntu;
     line-height: 1;
     color: $main-color;
+
+    
 }
+
+
+
+.b-title {
+    font-family: $piazzo;
+    color: #00dafd;
+    line-height: 2;
+    text-transform: uppercase;
+
+} 
 
 .l4-title {
     font-family: $piazzo;
@@ -46,20 +68,15 @@ h6, .h6 {
     font-weight: 600;
 }
 
-.b-title {
-    font-family: $piazzo;
-    font-size: 3em;
-    padding-top: 100px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #00dafd;
-    line-height: 2;
-    text-transform: uppercase;
+.section-header {
+    p {
+        color: $sec-color;
+    }
 
-    @media (max-width: $md) {
-        font-size: 2em;
-        line-height: 1.2;
-        margin-bottom: 1rem;
+    @media (max-width:$md) {
+        max-width: 90%;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

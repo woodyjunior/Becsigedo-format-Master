@@ -3,6 +3,11 @@
         .footer-block {
             width: 50%;
             flex: 0 0 50%;
+
+            @media(max-width: $md) {
+                width: 100px;
+                flex: 0 0 100%;
+            }
             
         }
 
