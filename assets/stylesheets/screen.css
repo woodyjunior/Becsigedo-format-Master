@@ -94,6 +94,7 @@ h6, .h6 {
   font-weight: 400;
   text-align: center;
   margin-bottom: 2rem;
+  color: #ffa400;
 }
 @media (max-width: 992px) {
   .main-title, .b-title {
@@ -210,6 +211,10 @@ ul, ol, li, dl {
 .px-15 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.pt-180 {
+  padding-top: 200px;
 }
 
 .img {
@@ -392,6 +397,10 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link {
 header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:active, header.header nav.navigation .nav-links .nav-item.submenu a.nav-link.active, header.header nav.navigation .nav-links .nav-item.submenu a.nav-link.hover {
   color: #7a7b7b;
   border-bottom-color: transparent;
+}
+
+.header.light-header {
+  color: #ffa400;
 }
 
 .banner {
@@ -603,4 +612,64 @@ header.header nav.navigation .nav-links .nav-item.submenu a.nav-link:hover, head
   padding: 1rem;
   margin: auto;
   border-radius: 50%;
+}
+
+.blog-intro {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.main-title, h1 {
+  color: #ffa400;
+}
+
+.blog-category .category-wrapper {
+  justify-content: space-around;
+  align-items: center;
+}
+.blog-category .category-post {
+  position: relative;
+  width: 33%;
+  flex: 0 0 30%;
+  text-align: center;
+  cursor: pointer;
+}
+.blog-category .category-post:hover .category-details {
+  background-color: rgba(255, 164, 0, 0.65);
+}
+.blog-category .category-post .category-details {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(25, 25, 32, 0.65);
+  color: #fff;
+  transition: all .3s ease;
+}
+.blog-category .category-post .category-details h5 {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 1.25em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #eaf6ff;
+}
+.blog-category .category-post .category-details .border-line {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background: #eaf6ff;
+}
+.blog-category .category-post .category-details p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  line-height: 2;
+  font-weight: 400;
 }
