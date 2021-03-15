@@ -1,0 +1,18 @@
+ .input-group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+
+.form-control {
+    position: relative;
+    display: block;
+    line-height: 2;
+    height: calc(2.25rem + 2px);
+    outline: none;
+    background-clip: padding-box;
+}

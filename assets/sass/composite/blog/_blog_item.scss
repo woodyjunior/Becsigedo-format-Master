@@ -1,0 +1,62 @@
+.blog-item {
+    display: flex;
+    margin-bottom: 4rem;
+
+    .blog-info {
+        width: 25%;
+        flex: 0 0 25%;
+        text-align: right;
+
+        .post-tag {
+            padding-bottom: 1rem;
+            
+            a {
+                font: 300 .9em/1.2 $ubuntu;
+                color: $font-color;
+                transition: .25s ease-in;
+
+                &:active, &.active, &.hover, &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+
+        .blog-meta {
+            padding-left: 0;
+            a {
+                display: inline-block;
+                padding-bottom: 1rem;
+                font-size: 0.9em;
+                font-weight: 300;
+                line-height: 1;
+                vertical-align: middle;
+                color: $sec-color;
+            }
+        }
+    }
+
+    .blog-post {
+        width: 75%;
+        flex: 0 0 75%;
+
+        .blog-details {
+            padding-top: 1rem;
+
+            h2 {
+                margin-bottom: 1rem;
+                color: $font-color;
+                transition: .3s ease;
+            }
+
+            a:hover {
+                h2 {
+                    color: $main-color;
+                }
+            }
+
+            p {
+                color: $sec-color;
+            }
+        }
+    }
+} 
